@@ -1,0 +1,21 @@
+//function costructor
+let func = new Function('x','y','x*y');
+console.log(func(5,6));
+
+//arrow functions
+
+// variation 1
+ var coord = (x,y,z) =>  x + y + z;
+
+console.log('coord:',coord(10,20,30));
+
+// variation 2
+ var coord = x =>  x + 10;
+
+console.log('coord:',coord(10));
+
+
+/ anonymous function
+(function () {
+ return console.log('I dont have a name');
+})();
